@@ -1,0 +1,48 @@
+/* 1. Style the above <h1> tag to use any color of your choice and a sans-serif font.*/
+#assignment-instructions {
+  color: blue;
+  font-family: sans-serif;
+}
+
+
+/* 2. Style all <code> tags to use the monospace font-family and have red text.*/
+code {
+  color: red;
+  font-family: monospace;
+}
+
+
+/* 3. Use a class selector to ensure that the <code> elements in the second <li> element have a different color (e.g. green).*/
+.highlighted-code code{
+  color: green;
+  font-family: monospace;
+}
+/* 3. another way */
+/* ol :nth-child(2) code {
+  color: green;
+  font-family: monospace;
+} */
+
+
+/* 4.Switch the order of the rules you created and use the dev tools of your browser to understand how specifity resolves conflicts (for the <code> elements). */
+/* no difference observed in output.  */
+/* the class wins over the element */
+
+
+/* 5. Set a default font (e.g. sans-serif) for the entire content of your page and use "Inheritance" to change the font of the <li> items, too.*/
+body {
+  font-family: sans-serif;
+}
+
+/* 6. Use a combinator to give all <li> elements but the first one (!) a black background and white text color (don't worry if the numbers disappear). */
+li + li {
+  background-color: black;
+  color: white;
+}
+
+/* 7. Use another combinator to now give all <li> inside an <ol> element a black background and white text color. */
+ol li {
+  background-color: black;
+  color: white;
+}
+ 
