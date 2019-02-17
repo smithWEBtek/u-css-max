@@ -88,3 +88,17 @@ p::first-letter {
   font-size: 20px;
 } */
 
+/* call to action:  CTA */
+.main-nav__item--cta a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
