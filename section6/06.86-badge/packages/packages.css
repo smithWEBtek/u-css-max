@@ -29,6 +29,26 @@ main {
     color: inherit;
     display: block;
     padding: 32px;
+    
+    /* does not take elements out of document flow */
+    /* and now this becomes the 'positioning context' for package__badge */
+    position: relative; 
+}
+
+.package__badge {
+    /* for position: absolute */ 
+    /* if parents have no position property applied, the 'positioning context' is the 'html' element */
+    /* else the closed ancestor with a position property applied, is the 'positioning context' */
+    position: absolute; 
+
+    /* position: fixed;  */
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: #ff5454;
+    padding: 8px;
 }
 
 .package__subtitle {
