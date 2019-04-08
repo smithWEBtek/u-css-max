@@ -7,9 +7,14 @@ body {
 #product-overview {
   background-color: #ff1b68;
   /* margin: 40px; */
-  border: 5px rgb(83, 79, 79) solid;
-  padding: 20px;
-  margin: 10px;
+  /* border: 5px rgb(83, 79, 79) solid; */
+  /* padding: 20px; */
+  /* margin: 10px; */
+  /* width: 50%; */
+  width: 400px;
+
+  height: 100%
+
 }
 .section-title {
   color: #2ddf5c;
@@ -20,7 +25,12 @@ body {
   font-family: 'Anton', sans-serif;
 }
 
+h1 {
+  /* margin: 0; */
+}
+
 h1 + p {
   color: red;
-  /* margin: 0; */
+  margin: 0;
+  padding: 0;
 }

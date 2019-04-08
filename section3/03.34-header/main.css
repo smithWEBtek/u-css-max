@@ -40,6 +40,8 @@ h1 + p {
 
 .main-nav {
   display: inline-block;
+  /* display: block; */
+  /* display: inline; */
   text-align: right;
   width: calc(100% - 54px);
 }
