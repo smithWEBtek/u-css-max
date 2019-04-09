@@ -29,27 +29,21 @@ h1 + p {
 }
 
 .main-header {
+  width: 100%;
   background-color:#2ddf5c;
   padding: 8px 16px;
 } 
 
 .main-header > div {
   display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header__brand {
-  color: #0e4f1f;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 22px;
 }
 
 .main-nav {
   display: inline-block;
+  /* display: block; */
+  /* display: inline; */
   text-align: right;
-  width: calc(100% - 76px);
-  vertical-align: middle;
+  width: calc(100% - 53px);
 }
 
 .main-nav__items { 
@@ -60,33 +54,6 @@ h1 + p {
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  padding: 0 10px;
 }
  
-.main-nav__item a {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.main-nav__item a::before {
-  content: " (before info)";
-  color: rgb(84, 92, 197); 
-}
-
-.main-nav__item a::after {
-  content: " (after info)";
-  color: red; 
-}
-
-.main-nav__item a:hover, 
-.main-nav__item a:active {
-  color: white;
-}
-
-p::first-letter {
-  color: red;
-  font-size: 20px;
-}
-

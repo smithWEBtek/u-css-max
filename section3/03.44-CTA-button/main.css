@@ -71,29 +71,19 @@ h1 + p {
   padding: 3px;
 }
 
-/* .main-nav__item a::after {
-  content: " (link)";
-  color: red; 
-} */
-
 .main-nav__item a:hover, 
 .main-nav__item a:active {
   color: white;
+  font-weight: bold;
   border-bottom: 5px solid white;
 }
-
-/* 
-p::first-letter {
-  color: red;
-  font-size: 20px;
-} */
 
 /* call to action:  CTA */
 .main-nav__item--cta a {
   color: white;
   background-color: #ff1b68;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .main-nav__item--cta a:hover,
