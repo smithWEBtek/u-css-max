@@ -11,34 +11,54 @@ document.addEventListener('DOMContentLoaded', function (event) {
   choosePlanButtons.forEach(button => {
     button.addEventListener('click', function (e) {
       e.preventDefault();
+      console.log('choosePlanButton clicked ')
       backdrop.style.display = 'block';
       modal.style.display = 'block';
+
+      // modal.classList.add('open');
+      // backdrop.classList.add('open');
     })
   });
 
   function closeModal() {
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
+    if (backdrop) {
+      backdrop.style.display = 'none';
+    }
+
+    if (modal) {
+      modal.style.display = 'none';
+    }
+    // backdrop.classList.remove('open')
+    // modal.classList.remove('open')
   };
 
-  noButton.addEventListener('click', closeModal);
-  backdrop.addEventListener('click', function (e) {
-    e.preventDefault()
-    mobileNav.style.display = 'none';
-    closeModal();
-  });
+  if (noButton) {
+    noButton.addEventListener('click', closeModal);
+  }
 
-  yesButton.addEventListener('click', function (e) {
-    e.preventDefault();
-    closeModal()
-    alert("Thank you, we will be contacting you soon!")
-  });
+  if (backdrop) {
+    backdrop.addEventListener('click', function (e) {
+      e.preventDefault()
+      mobileNav.style.display = 'none';
+      closeModal();
+    });
+  }
 
-  toggleButton.addEventListener('click', function (e) {
-    e.preventDefault();
-    backdrop.style.display = 'block'
-    mobileNav.style.display = 'block';
-  });
+  if (yesButton) {
+    yesButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeModal()
+      alert("Thank you, we will be contacting you soon!")
+    });
+  }
 
-
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      backdrop.style.display = 'block'
+      mobileNav.style.display = 'block';
+      // backdrop.classList.add('open');
+      // mobileNav.classList.add('open');
+    });
+  };
 });
